@@ -1,25 +1,25 @@
 class Nutsh < Formula
   desc "A Nutanix TUI that tells you why it's broken"
   homepage "https://nutsh.dev"
-  version "0.0.2-beta1"
+  version "0.0.2-beta2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Fen0l/nutsh/releases/download/v0.0.2-beta1/nutsh-aarch64-apple-darwin.tar.xz"
-      sha256 "12ef45cdca3746f4b63b94dcbb3ddb7ba47bab0a04290165e056e66aedd14e76"
+      url "https://github.com/Fen0l/nutsh/releases/download/v0.0.2-beta2/nutsh-aarch64-apple-darwin.tar.xz"
+      sha256 "00fa70a29f9eaade740d4a365fbdf34502c6ff071639121777a55a4fc1939437"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Fen0l/nutsh/releases/download/v0.0.2-beta1/nutsh-x86_64-apple-darwin.tar.xz"
-      sha256 "aa2ecd0556d5df995d521991f2556329108099bff44f725dee6220bd49fae146"
+      url "https://github.com/Fen0l/nutsh/releases/download/v0.0.2-beta2/nutsh-x86_64-apple-darwin.tar.xz"
+      sha256 "ea8acd16203e0125ae0b2a9e96597f1cc001bfea65acc3bb5ef00e45091479e7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Fen0l/nutsh/releases/download/v0.0.2-beta1/nutsh-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ec8dd37f9c49900f182cfb1a9d5a0c759cd3c4feecd4ee9d73c7afe777990475"
+      url "https://github.com/Fen0l/nutsh/releases/download/v0.0.2-beta2/nutsh-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "93dcb3bee099579eab0c65ae7e54f4a0938f407f53a4bab38e4489fdfafa692b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Fen0l/nutsh/releases/download/v0.0.2-beta1/nutsh-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "615d757c6e8967eb37bd1eed828291709809a8dd1d82cea051cfdcc1a74fd357"
+      url "https://github.com/Fen0l/nutsh/releases/download/v0.0.2-beta2/nutsh-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "80fc722e5700bc63c343282e6f4f356b8ae3afa000c0f89ac38ec27ef2482f4b"
     end
   end
   license "MIT"
